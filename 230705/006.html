@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p태그</title>
+  <style>
+    .br-span {
+      display: block;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <span>lorem</span>
+  <span>lorem</span>
+  <span>lorem</span>
+  <p>dd</p>
+
+  <p>
+    <strong>Lorem</strong>, <b>ipsum</b>
+    <em>dolor</em>
+    <i>sit</i> amet consectetur<span class="br-span"></span>
+    adipisicing elit. Vitae magnam,
+    cupiditate ab sapiente asperiores numquam
+
+    accusantium in quos, consequuntur tempore ipsa voluptates similique nobis expedita rem. Rem iusto ea mollitia.
+  </p>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae magnam, cupiditate ab sapiente asperiores numquam
+    accusantium in quos, consequuntur tempore ipsa voluptates similique nobis expedita rem. Rem iusto ea mollitia.
+  </p>
+
+  <p><code>push()</code>이 코드는 어떤 목적으로 사용됩니다.</p>
+  <p>push()이 코드는 어떤 목적으로 사용됩니다.</p>
+
+  <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="ko-KR"&gt;
+    &lt;/html&gt;
+  </pre>
+
+
+
+  <p><q>명언 ~~~~~</q>이 문장은 어디에서 나온 문장</p>
+  <figure>
+    <blockquote>
+      <p>
+        "만약 네가 오후 네시에 온다면 난 세시부터 행복해질 거야.
+        그리고 널 만날 시간이 가까워질수록 점점 더 행복해지겠지.
+        네시가 되면, 흥분해서 안절부절 못할 거야.
+        그래서 행복이 얼마나 값진 것인지를 알게 될 거야."
+      </p>
+    </blockquote>
+    <cite>— 어린왕자 <mark>여우</mark>의 말 중</cite>
+    <address>주소~</address>
+  </figure>
+
+  <p>
+    <abbr>CSS</abbr> (Cascading Style Sheets)
+    <abbr>HTML</abbr> (HyperText Markup Language)
+  </p>
+
+  <p>
+    <abbr title="Cascading Style Sheets">CSS</abbr>
+    <abbr title="HyperText Markup Language">HTML</abbr>
+  </p>
+
+  <a href="#html">html</a>
+  <p>
+    <dfn id="html">
+      <abbr title="HyperText Markup Language">HTML</abbr>
+    </dfn>
+    웹 페이지의 의미론과 구조를 만드는 데 사용되는 마크업 언어입니다.
+  </p>
+
+  <p><var>a<sup>2</sup></var></p>
+  <p>English: 5<sup>th</sup></p>
+  CO<sub>2</sub>
+  <var>x<sub>1</sub></var>
+
+  <br>
+  <kbd>Cmd</kbd>
+
+
+  <p>맥 브라우저 강력 새로고침 <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd></p>
+
+</body>
+
+</html>
+<!-- 줄바꿈 두번하고 싶다고 br을 두번 사용하지 말 것
+ span은 의미가 없는 태그이지만 줄바꿈이 안 되는 태그이다.
+@media == 미디어쿼리는 if문이라고 보면된다. 
+@media (max-width: 800px) {
+  .small-page{
+    background-color: red;
+  }
+}
+wbr은 현재의 줄바꿈 규칙을 무시하고 줄바꿈을 한다.
+한중일(CJK)텍스트는 줄을 바꿀 때 단어를 끊지 않습니다.
+<code>태그는 코드임을 인식시켜주는데 이는 웹에서 코드로 인식해 번역을 하지 않아서 사용자 이용에 편의를 더해준다.
+<b>는 strong태그와 비슷한 역할을 하지만 사용하지 않는 것을 권함. 
+<em>은 강조인데 그냥 문장의 의미를 강조하는 느낌임. 영어권에서는 유의미한 차이가 있겠지만 우리나라에서는,,,, 
+<i> 태그는 이탤릭체, 기울임을 위해 사용하는 태그인데 외국어, 등장인물의 생각을 표현할때 사용함. 
+※ i,em, strong, b 등은 스타일의 목적으로 사용하지 않는 것을 권함. 스타일은 무조건 css에서 변경하도록 하자.
+<cite>는 저작물의 출처표기용 태그
+-->
