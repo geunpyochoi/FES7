@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index</title>
+  <style>
+    .parent {
+      background-color: red;
+    }
+
+    .a,
+    .b,
+    .c {
+      width: 100px;
+      height: 100px;
+    }
+
+    .a {
+      background-color: skyblue;
+      position: relative;
+      z-index: 0;
+    }
+
+    .b {
+      background-color: violet;
+      top: 50px;
+      left: 50px;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .c {
+      background-color: salmon;
+      top: 100px;
+      left: 100px;
+      position: absolute;
+      z-index: 3;
+    }
+  </style>
+</head>
+<!-- 앱솔루트 애들은 본인의 위치를 벗어난거기때문에 부모 컬러의 영향을 안 받음 -->
+
+<body>
+  <div class="parent">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+  </div>
+
+</body>
+
+</html>
