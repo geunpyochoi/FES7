@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clamp</title>
+  <style>
+    .px {
+      font-size: 20px;
+    }
+
+    .px40 {
+      font-size: 40px;
+    }
+
+    .clamp {
+      font-size: clamp(20px, 2.5vw, 40px);
+    }
+  </style>
+</head>
+
+<body>
+  <p class="px">Hello World</p>
+  <p class="clamp">Hello World</p>
+  <p class="px40">Hello World</p>
+</body>
+
+</html>
