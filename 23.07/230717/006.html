@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    .container {
+      width: 600px;
+      height: 600px;
+      display: grid;
+      grid-template-areas:
+        "a a a b b"
+        "a a a b b"
+        "c c d b b"
+        "e e f f f"
+        "e e f f f"
+
+      ;
+      gap: 10px;
+    }
+
+    .box1 {
+      background-color: royalblue;
+      grid-area: a;
+    }
+
+    .box2 {
+      background-color: yellow;
+      grid-area: b;
+    }
+
+    .box3 {
+      background-color: violet;
+      grid-area: c;
+    }
+
+    .box4 {
+      background-color: orange;
+      grid-area: d;
+    }
+
+    .box5 {
+      background-color: salmon;
+      grid-area: e;
+    }
+
+    .box6 {
+      background-color: seagreen;
+      grid-area: f;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+    <div class="box6">box6</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-template-columns/row ver.</title>
+  <style>
+    .container {
+      width: 600px;
+      height: 600px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 3fr 2fr 3fr;
+      grid-template-rows: 2fr 1fr 1fr;
+    }
+
+    .box1 {
+      background-color: royalblue;
+      grid-column: 1/3;
+    }
+
+    .box2 {
+      background-color: yellow;
+      grid-column: 3/4;
+      grid-row: 1/3;
+    }
+
+    .box3 {
+      background-color: violet;
+    }
+
+    .box4 {
+      background-color: orange;
+    }
+
+    .box5 {
+      background-color: salmon;
+    }
+
+    .box6 {
+      background-color: seagreen;
+      grid-column: 2/4;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+    <div class="box6">box6</div>
+  </div>
+</body>
+
+</html>
