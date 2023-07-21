@@ -1,0 +1,25 @@
+.wrapper{
+  box-shadow: inset 0 0 20px red;
+  width: 800px;
+  margin:100px auto;
+  text-align: center;
+}
+
+.fruit{
+  background-color: gold;
+  width:200px;
+  height: 200px;
+  display: inline-block;
+  line-height: 200px;
+  border-radius: 50%;
+}
+
+.lemon{
+  background-color: antiquewhite;
+}
+.orange{
+  background-color: orange;
+}
+.jamong{
+  background-color: orangered;
+}

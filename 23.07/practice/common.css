@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Pretendard-Regular', sans-serif;
+  background-color: #fffaf0;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+strong{
+  margin: 0;
+}
+input{
+  border-style: none;
+}
+label{
+  font-family: inherit;
+}
+
+button{
+  border-style: none;
+  cursor: pointer;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  background-color: #fff;
+}
+
+.h-img{
+  margin-left: 108px;
+}
+
+.h-join{
+  width:115px;
+  height: 40px;
+  margin-right: 108px;
+  font-size: 14px;
+  background-image: url(../diary/img/icon-join.svg);
+  background-repeat: no-repeat;
+}
+
+
+/* main */
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:  70px;
+}
+.m-logo{
+  width: 250px;
+  height: 120px;
+}
+
+.main-title{
+  width: 250px;
+  margin: auto;
+  text-align: center;
+}
+
+.main .main-title strong{
+  display: inline-block;
+  color: #29363D;
+  font-family: 'Pretendard-Regular';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-bottom: 2px solid #FF4F6E;
+  margin-top: 24px;
+  box-shadow: inset 0 -0.5em 0 #FFD8D6;
+}
+/* /main */
+
+/* form */
+.form{
+  width: 392px;
+  margin-top: 40px;
+  font-family: 'Pretendard Regular',sans-serif;
+}
+
+.form label{
+  display: block;
+  color:#29363D;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.form input{
+  margin-bottom: 24px;
+  width: 100%;
+  height: 36px;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid #677880;
+}
+
+.form .login-btn{
+  color:#fff;
+  background-color: #29363D;
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* footer */
+
+footer{
+  text-align: center;
+  margin-top: 52px;
+  color: #677880;
+  font-family: 'Pretendard';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
