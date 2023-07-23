@@ -10,7 +10,8 @@ body{
 }
 
 .ear{
-  background-color: rgb(255, 247, 236);
+  /* background-color: rgb(255, 247, 236); */
+  background-color: #fff;
 }
 
 .left{
@@ -20,6 +21,8 @@ body{
   top: 60px;
   border-radius: 0 100% 0 100%;
   position: absolute;
+  background-color: rgb(252, 232, 236);
+  box-shadow: inset 50px 80px rgb(255, 247, 236);
 }
 .right{
   width: 200px;
@@ -28,12 +31,14 @@ body{
   top:60px;
   border-radius: 100% 0  100% 0;
   position: absolute;
+  background-color: rgb(252, 232, 236);
+  box-shadow: inset -50px 80px rgb(255, 247, 236);
 }
 
 .face{
   width: 500px;
   height: 400px;
-  background-color: #fff;
+  background-color: rgb(255, 247, 236);
   border-radius: 50%;
   position: relative;
   z-index: 1;
@@ -57,11 +62,11 @@ body{
   background-color: black;
   margin-top: 40px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .mouth{
-  background-color: #fff;
+  background-color: rgb(255, 247, 236);
   margin-top: 80px;
   width:80px;
   height: 55px;
@@ -75,4 +80,78 @@ body{
 }
 .m-right{
   right:173px;
+}
+
+.white{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 253 );
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.hair-1{
+  background-color: rgb(255, 247, 236);
+  margin-left: 55px;
+  width: 200px;
+  height: 10px;
+  border-radius: 1% 100% 0 0;
+  position: absolute;
+  z-index: 1;
+  border-top: 1px solid black;
+}
+.hair-2{
+  margin-top: 10px;
+  background-color: rgb(255, 247, 236);
+  margin-left: 55px;
+  width: 200px;
+  height: 10px;
+  border-radius: 1% 100% 0 0;
+  position: absolute;
+  z-index: 1;
+  border-top: 1px solid black;
+}
+.hair-3{
+  background-color: rgb(255, 247, 236);
+  margin-left: 55px;
+  margin-top: 20px;
+  width: 200px;
+  height: 10px;
+  border-radius: 1% 100% 0 0;
+  position: absolute;
+  z-index: 1;
+  border-top: 1px solid black;
+}
+.hair-4{
+  background-color: rgb(255, 247, 236);
+  margin-top: 30px;
+  margin-right: 310px;
+  width: 200px;
+  height: 10px;
+  border-radius: 100% 1% 0 0;
+  position: absolute;
+  z-index: 1;
+  border-top: 1px solid black;
+}
+.hair-5{
+  background-color: rgb(255, 247, 236);
+  margin-top: 50px;
+  margin-right: 310px;
+  width: 200px;
+  height: 10px;
+  border-radius: 100% 1% 0 0;
+  position: absolute;
+  z-index: 1;
+  border-top: 1px solid black;
+}
+.hair-6{
+  background-color: rgb(255, 247, 236);
+  margin-top: 70px;
+  margin-right: 310px;
+  width: 200px;
+  height: 10px;
+  border-radius: 100% 1% 0 0;
+  position: absolute;
+  z-index: 1;
+  border-top: 1px solid black;
 }
