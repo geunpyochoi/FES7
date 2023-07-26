@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3 {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  border: 0;
+  background: none;
+}
+
+button:enabled {
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input {
+  display: block;
+}
+
+.a11y{
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+body{
+  font-family: "Spoqa Han Sans Neo";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  width: 520px;
+  /* height: 712px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #C4C4C4;
+}
+
+/* header */
+
+header{
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-family: "Spoqa Han Sans Neo";
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #C4C4C4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* section1 */
+.section1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.title{
+  color: #000;
+  font-family: "Spoqa Han Sans Neo";
+  font-size: 20px;
+  /* font-style: normal;
+  font-weight: 500; */
+  line-height: 120%;
+  padding: 25px;
+}
+
+/* section2 */
+ul li{
+  color: #767676;
+  border-radius: 5px;
+  width: 472px;
+  padding: 15px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.google{
+  background-image: url(./Google__G__Logo\ 1.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 12px 11px ;
+  border: 2px solid #767676;
+}
+.facebook{
+  background-image: url(./facebook.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 12px 11px ;
+  border: 2px solid #2d9cdb;
+}
+.naver{
+  background-image: url(./naver-logo.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 12px 11px ;
+  border: 2px solid #00bf18;
+}
+.kakao{
+  background-image: url(./message-circle.png);
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 12px 11px ;
+  border: 2px solid #F2C94C;
+}
+
+
+
+/* [class^="icon"]::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url('images_login/icon_sprites_retina.png');
+  background-size: 117px 84px;
+}
+
+.link-sns-login.icon-facebook {
+  border: 1px solid #2D9CDB;
+}
+
+.link-sns-login.icon-naver {
+  border: 1px solid #00BF18;
+}
+
+.link-sns-login.icon-kakao {
+  border: 1px solid #F2C94C;
+}
+
+.icon-google::before {
+  width: 22px;
+  height: 22px;
+  background-position: -52px -10px;
+  /* background: url("images_login/icon_google.png") no-repeat; */
+
+
+/* .icon-naver::before {
+  width: 22px;
+  height: 22px;
+  background-position: -10px -10px;
+  /* background: url("images_login/icon_naver.png") no-repeat; */
+
+
+/* .icon-kakao::before {
+  width: 22px;
+  height: 22px;
+  background-position: -10px -52px;
+  /* background: url("images_login/icon_kakao.png") no-repeat; */
+
+
+/* .icon-facebook::before {
+  height: 24px;
+  width: 13px;
+  background-position: -93px -10px;
+
+  /* background: url("images_login/icon_facebook.png") center no-repeat; */
+
