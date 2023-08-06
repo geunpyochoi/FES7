@@ -12,8 +12,8 @@
 <body>
   <article class="container">
     <header>
-      <strong>로그인 또는 회원가입</strong>
-      <button type="button" class="close"></button>
+      <strong class="login-title">로그인 또는 회원가입<button type="button" class="close"></button></strong>
+
     </header>
     <main>
       <section class="section1">
@@ -26,17 +26,16 @@
           <label for="user-pw" class="a11y">비밀번호</label>
           <input type="password" id="user-pw" placeholder="비밀번호">
           <span class="txt">아이디 혹은 비밀번호가 일치하지 않습니다.</span>
-          <input type="checkbox" id="check">
-          <span class="login-state">로그인 상태 유지</span>
           <!-- 체크박스는 index1.html 참고 -->
-          <label for="check" class="a11y">로그인 상태 유지</label>
+          <input type="checkbox" id="check" class="checkbox">
+          <label for="check" class="login-state">로그인 상태 유지</label>
         </form>
         <button type="submit" class="btn-login">로그인</button>
         <div class="func">
           <a href="#" class="find join">회원가입</a>
           <a href="#" class="find">아이디/비밀번호 찾기</a>
         </div>
-        <span class="or">또는</span>
+        <div class="or-line"><span class="or">또는</span></div>
       </section>
       <section class="section2">
         <h2 class="a11y">다른 로그인 방법</h2>
