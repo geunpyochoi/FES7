@@ -5,11 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <title>비밀일기 | 회원가입</title>
 </head>
 
 <body>
-
+  <header class="join-header">
+    <div class="header-container">
+      <a href="./login.html"><button class="btn-home" type="button"></button></a>
+      <a href="./login.html" class="btn-login">로그인</a>
+    </div>
+  </header>
+  <main>
+    <section class="login-section">
+      <img src="./main-logo.png" alt="">
+      <span class="login-txt">회원가입</span>
+    </section>
+    <form class="login-form">
+      <label for="email">이메일</label>
+      <input type="email" id="email">
+      <label for="pw">비밀번호</label>
+      <input type="password" id="pw">
+      <label for="name">닉네임</label>
+      <input type="text" id="name">
+      <button type="button">회원가입</button>
+    </form>
+  </main>
+  <footer>Copyright 2023. WENIV All rights reserved.</footer>
 </body>
 
 </html>
