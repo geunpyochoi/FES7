@@ -171,8 +171,13 @@ footer{
 
 /* main */
 
+.diary-main{
+  display: grid;
+  grid-template-columns: 2fr 0.1fr 4fr;
+}
+
 .diary-input{
-  width:580px;
+  /* width:800px; */
 }
 
 .diary-main form{
@@ -226,4 +231,19 @@ footer{
   opacity: 0.5;
 }
 /* diary record */
+
+.record-part{
+  margin: 78px 108px 40px 39px;
+  border: 1px solid #677880;
+}
+.record-part strong{
+  display: block;
+  padding: 60px 495px 13px 48px;
+  color: #29363D;
+  font-size: 16px;
+  font-weight: 700;
+}
+.record-part span{
+  padding : 12px 48px;
+}
 
