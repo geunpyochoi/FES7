@@ -148,11 +148,14 @@ footer{
 
 
 /* main-html*/
+.diary-main{
+  display: flex;
+}
 .btn-logout{
   margin-right: 108px;
   background-position: 10px 50%;
   padding: 0 20px 0 42px;
-  background-image: url(./icon/icon-join.png);
+  background-image: url(./icon/icon/icon-logout.svg);
   background-repeat: no-repeat;
   background-size: 32px;
 }
@@ -169,14 +172,11 @@ footer{
 /* main */
 
 .diary-input{
-  width:565px;
-}
-
-.diary-main{
-  margin-top: 63px;
+  width:580px;
 }
 
 .diary-main form{
+  margin-top: 63px;
   margin-left:108px;
   display: flex;
   flex-direction: column;
@@ -184,24 +184,31 @@ footer{
 .diary-main form input{
   margin-top: 16px;
   border-radius: 4px 4px 0px 0px;
-  border-bottom: 1px solid #677880;
 }
 .diary-input span{
-  font-weight: 700;  
+  font-weight: 700;
+  background-image: url(./icon/icon/heart.svg);
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: -5px 50%;
+  padding-left: 25px;
 }
 
 .diary-input form input::placeholder{
-  
+  font-size: 16px;
+  line-height: 150%;
 }
 
 #diary-title{
   padding : 12px 15px;
+  border-bottom: 1px solid #677880;
 }
 
 #diary-content{
   padding: 14px 16px;
   padding-bottom: 326px;
   margin-bottom: 16px;
+  border: 1px solid #677880;
 }
 
 .btn-create{
@@ -209,6 +216,14 @@ footer{
   background-color: #29363D;
   padding: 15px 180px;
   border-radius: 4px;
+}
+
+.line{
+  height: 100vh;
+  width: 2px;
+  background-color: #FF4F6E;
+  margin-left: 39px;
+  opacity: 0.5;
 }
 /* diary record */
 
