@@ -176,10 +176,6 @@ footer{
   grid-template-columns: 2fr 0.1fr 4fr;
 }
 
-.diary-input{
-  /* width:800px; */
-}
-
 .diary-main form{
   margin-top: 63px;
   margin-left:108px;
@@ -301,3 +297,20 @@ footer{
   font-weight: 400;
 }
 
+.btn-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 111px;
+  border: 1px solid #677880;
+  border-radius: 24px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+
+.btn-group span{
+  color: #D8DDDE;
+}
