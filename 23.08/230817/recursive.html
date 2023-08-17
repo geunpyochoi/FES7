@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    function sum(a) {
+      if (a.length === 1) return a[0];
+      return sum(a.splice(1)) + a[0];
+    }
+  </script>
+</body>
+
+</html>
