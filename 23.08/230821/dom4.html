@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+
+  <article class="cont">
+    <h1>안녕하세요 저는 이런 사람입니다.</h1>
+    <p>지금부터 자기소개 올리겠습니다</p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt voluptates laudantium fugit, omnis
+    dolore itaque esse exercitationem quam culpa praesentium, quisquam repudiandae aut. Molestias qui quas ea iure
+    officiis.
+    <strong>감사합니다!</strong>
+  </article>
+
+  <strong class="sayHi">
+    반갑습니다.
+  </strong>
+
+  <script>
+
+    const cont = document.querySelector(".cont");
+    console.log(cont.firstElementChild); //첫번째 자식요소 
+    console.log(cont.firstChild); // 첫번째 자식 노드
+    //firstChild는 first childe node를 element node 또는 text node, comment node로 반환한다. firstElementChild는 first child node를 element node로만 반환을 한다
+
+
+    const sayHi = document.querySelector('.sayHi');
+    sayHi.insertAdjacentHTML('beforebegin', '<span>안뇽하세용</span>')
+    sayHi.insertAdjacentHTML('afterbegin', '<span>안녕히가세용</span>')
+    sayHi.insertAdjacentHTML('beforeend', '<span>여기는 비포엔드</span>')
+    sayHi.insertAdjacentHTML('afterend', '<span>여기는 애프터엔드</span>')
+  </script>
+</body>
+
+</html>
