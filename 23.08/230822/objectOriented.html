@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    /*const me = {
+      name: '한재현',
+      address: '제주도 제주시 인다 1길',
+      phoneNum: '010-8000-0000',
+      canWalk: function () {
+        console.log('재현이가 걷는다.');
+      },
+      teaching: function (student) {
+        student.levelUp();
+      }
+    }
+    const lion = {
+      level: 1,
+      levelUp: function () {
+        this.level++;
+      }
+    }
+
+    me.teaching(lion);*/
+    const me = {
+      name: '최근표',
+      phoneNum: '010-1234-5678',
+      health: 1,
+      money: 0,
+      workout: function () {
+        this.health++;
+        console.log(this.health);
+      }
+    }
+    const company = {
+      name: 'big company',
+      money: 9999999,
+      giveSalary: function (employee) {
+        this.money -= 300;
+        console.log(this.money);
+        employee.money += 300;
+        console.log(employee.money);
+      }
+    }
+    company.giveSalary(me);
+
+    function Factory() { }
+
+    const robot1 = new Factory(); //팩토리는 생성자, robot1은 인스턴스
+    robot1 instanceof Factory // true;
+
+
+    
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <h1>나의 todo list</h1>
+  <p>1. 오늘 저녁에는 부대찌개를 끓여 먹겠다.<button type="button">삭제</button></p>
+  <p>2. 후식으로 슈팅스타를 먹겠다.<button type="button">삭제</button></p>
+  <p>3. 자기 전에 반드시 내일 아침 메뉴를 생각해두겠다.<button type="button">삭제</button></p>
+  <script>
+    const todo = document.querySelectorAll('p');
+    todo.forEach((item) => {
+      item.addEventListener('click', () => {
+        alert(item.firstChild.textContent);
+        //내가 쓴 방법은 alert(item.textContent.replace('삭제', ''))
+      })
+      /*item.lastChild.addEventListener('click',(e)=>{
+        alert
+      })*/
+    })
+    const btns = document.querySelectorAll('button');
+    btns.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        const result = confirm('삭제하시겠습니까?');
+        e.stopPropagation();
+        if (result === true) {
+          item.closest('p').remove();
+          //closest 가장 가까운 p를 찾겠다 (본인 포함)
+          //closest('p') 대신 parentNode 사용 가능. (여기서만)
+          //이걸 눌렀을때 alert 창이 뜨는건 버블링 때문이다.
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>

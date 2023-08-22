@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    function RobotFactory(foodNames) {
+      this.food = foodNames[parseInt(Math.random() * foodNames.length)];
+      this.output = function () {
+        console.log(this.food);
+      }
+    }
+    const robot = new RobotFactory(['청국장', '물냉면', '돔베고기']);
+    robot.output();
+  </script>
+</body>
+
+</html>
