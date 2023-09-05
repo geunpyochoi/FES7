@@ -34,10 +34,10 @@ class ColaGenerator{
     const docFrag = new DocumentFragment(); // 프래그먼트 쓰면 메모리 절약되니까 이걸로 append하자.
     data.forEach((el)=>{
       const item = document.createElement('li');
-      const itemTemplate = `<button type="button" class="btn-cola on">
-            <img src="./img/cola-original.png" alt="" />
-            <span class="cola-name">Original_Cola</span>
-            <strong class="cola-price">1000원</strong>
+      const itemTemplate = `<button type="button" class="btn-cola" data-item="${el.name}" data-count="${el.count}" data-price="${el.cost}" data-img="${el.img}">
+            <img src="./img/${el.img}" alt="${el.name}" />
+            <span class="cola-name">${el.name}</span>
+            <strong class="cola-price">${el.cost}원</strong>
           </button>`;
       item.innerHTML = itemTemplate;
       docFrag.append(item);
