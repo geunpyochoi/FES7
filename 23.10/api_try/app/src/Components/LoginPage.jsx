@@ -4,31 +4,34 @@ function LoginPage() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const login = async (email, password)=>{
+    const login = async (email,password)=>{
         const baseUrl = "https://api.mandarin.weniv.co.kr";
         const reqPath = "/user/login";
-        const reqUrl = baseUrl+reqPath
         
         const loginData = {
-            "user":{
-                "email":email,
-                "password":password
-            }
+          "user":{
+            "email":email,
+            "password":password
+          }
         };
-        // 로그인해서 token꺼내기~!
+        const reqUrl = baseUrl+reqPath;
+        // 로그인해서 token 꺼내기!
         const res = await fetch(reqUrl,{
-            method:"POST",
-            headers:{
-                "Content-type":"application/json"
-            },
-            body:JSON.stringify(loginData)
+          method:"POST",
+          headers:{
+            "Content-type":"application/json"  
+          },
+          body:JSON.stringify(loginData)
         });
         const json = await res.json();
-        console.log(json);
-        const token = json.user.token;
-        console.log(token);
-        // 로컬스토리지에 토큰 저장하기.
-        localStorage.setItem("token",token);
+        // 객체에 user가 없는 경우 == 로그인 실패했을 때
+        if(!json.user){
+          return 
+        }
+        else{
+          const token = json.user.token;
+          localStorage.setItem("token",token);
+        }        
     }
 
     const inputEmail = (e)=>{
@@ -39,7 +42,7 @@ function LoginPage() {
     }
     const submitLogin = (e)=>{
         e.preventDefault();
-        login(email, password)
+        login(email,password);
     }
     return(
         <>
