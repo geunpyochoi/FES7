@@ -25,8 +25,8 @@ button:not(:disabled) {
 
 /* a-button  */
 /* .btn-join,
-  .btn-login,
-  .btn-logout */
+.btn-login,
+.btn-logout */
 [class^="btn"] {
   display: inline-block;
   padding: 1em 1em 1em 2.8em;
@@ -35,15 +35,15 @@ button:not(:disabled) {
 }
 
 .btn-join {
-  background: url(./img/icon-join.svg) no-repeat 0.8em center/ 2em;
+  background: url(./images/icon-join.svg) no-repeat 0.8em center/ 2em;
 }
 
 .btn-login {
-  background: url(./img/icon-login.svg) no-repeat 0.8em center/ 2em;
+  background: url(./images/icon-login.svg) no-repeat 0.8em center/ 2em;
 }
 
 .btn-logout {
-  background: url(./img/icon-logout.svg) no-repeat 0.8em center/ 2em;
+  background: url(./images/icon-logout.svg) no-repeat 0.8em center/ 2em;
 }
 
 /* button */
@@ -61,8 +61,8 @@ button:not(:disabled) {
 }
 
 /* .black-btn:not(:disabled) {
-    cursor: pointer;
-  } */
+  cursor: pointer;
+} */
 .black-btn:disabled {
   opacity: 0.2;
 }
